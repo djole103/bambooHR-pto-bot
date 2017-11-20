@@ -18,7 +18,7 @@ function whosOut() {
     console.log('Whos out running\nCurrent time is: ' + date.getHours() + ':' + date.getMinutes())
 
     const options = {
-        url: 'https://' + process.env.BAMBOOHR_TOKEN + ':x@api.bamboohr.com/api/gateway.php/' + process.env.BAMBOOHR_SUBDOMAIN + '/v1/time_off/whos_out/?start=2016-09-1&end=2016-12-31'
+        url: 'https://' + process.env.BAMBOOHR_TOKEN + ':x@api.bamboohr.com/api/gateway.php/' + process.env.BAMBOOHR_SUBDOMAIN + '/v1/time_off/whos_out/?start=2017-11-1&end=2019-12-31'
     }
 
 

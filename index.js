@@ -4,7 +4,7 @@ const schedule = require('node-schedule')
 
 const rule = new schedule.RecurrenceRule()
 rule.dayOfWeek = 1
-rule.hour = 8
+rule.hour = 2
 // Don't forget the minute!
 rule.minute = 0
 
@@ -18,4 +18,4 @@ const j = schedule.scheduleJob(rule, function(err) {
 whosOut()
 console.log('PTO Bot for',process.env.BAMBOOHR_SUBDOMAIN)
 
-console.log('Messages scheduled for Mondays at 8am!')
+console.log('Messages scheduled for Mondays at 7am EST!')

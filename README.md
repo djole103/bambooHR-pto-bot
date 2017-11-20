@@ -8,14 +8,8 @@ Uses the BambooHR time off API, botkit, lodash.find, and moment!
 
 ## Never bring a lunch to work for a friend who has left town again! lolz
 
-
 # Setup
-
-1. Generate Slack custom integration webhook [here](https://slack.com/apps/manage/custom-integrations) and choose the channel you would like WhosOut to post to. Create a BambooHR api token within your account, and note the subdomain associated with your BambooHR organization.
-
-1. From within the bambooHR-whosOut directory, run
-```
-docker build -t whosout:latest -q . &&
-docker run -d --env BAMBOOHR_SUBDOMAIN=<YOUR TEAM> --env SLACK_WEBHOOK=<YOUR WEBHOOK> --name whosout --env BAMBOOHR_TOKEN=<YOUR TOKEN> whosout
-```
-2. The scheduler is now running, and will wait until 8am Mondays system time to post to the channel you setup the custom integration to default to.
+1. Requires node 4.x (Tested on 4.8.[4/6]). Confirm path and version.
+2. Add environment variables for `SLACK_WEBHOOK`, `BAMBOOHR_TOKEN`, and `BAMBOOHR_SUBDOMAIN`.
+3. `npm install`
+4. `npm start`
